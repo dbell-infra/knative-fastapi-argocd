@@ -1,0 +1,12 @@
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: fastapi-example
+spec:
+  template:
+    spec:
+      containers:
+        - image: dbellinfra/knative-fastapi-example:v0.0.2
+          ports:
+            - containerPort: 8080
+  
