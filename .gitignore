@@ -1,1 +1,5 @@
 venv
+infrastructure/aws/.terraform
+infrastructure/aws/.terraform.lock.hcl
+infrastructure/aws/terraform.tfstate
+infrastructure/aws/terraform.tfstate.backup

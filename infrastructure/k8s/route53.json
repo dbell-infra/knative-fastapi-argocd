@@ -1,0 +1,18 @@
+{
+    "Comment": "adding app wildcard mapping to kourier CNAME",
+    "Changes": [
+        {
+            "Action": "UPSERT",
+            "ResourceRecordSet": {
+                "Name": "*.apps.dbelltest.net.",
+                "Type": "CNAME",
+                "TTL": 300,
+                "ResourceRecords": [
+                    {
+                        "Value": "abf3b1fd383b2482cb9a3ad51e9e00d3-1157156232.us-east-2.elb.amazonaws.com"
+                    }
+                ]
+            }
+        }
+    ]
+}
